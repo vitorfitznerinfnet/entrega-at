@@ -1,0 +1,24 @@
+﻿@model GerenciadorTurma.Models.Alunos.CadastroModel
+
+<form action="/alunos/cadastro" method="post">
+    <div class="form-group">
+        <label>Nome</label>
+        <input type="text" class="form-control" placeholder="Nome do aluno" name="nome">
+    </div>
+    <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" class="form-control" placeholder="E-mail do aluno" name="email">
+    </div>
+
+    @if (Model.Errors.Count > 0)
+    {
+        <ul class="list-group">
+            @foreach (var erro in Model.Errors)
+            {
+                <li class="list-group-item">@erro</li>
+            }
+        </ul>
+    }
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

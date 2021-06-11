@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorTurma", "GerenciadorTurma\GerenciadorTurma.csproj", "{73355A03-36DD-40DF-8D79-18A6FC2884A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorTurma.Testes", "GerenciadorTurma.Testes\GerenciadorTurma.Testes.csproj", "{0C11475A-78C2-4206-9330-883A336AB155}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73355A03-36DD-40DF-8D79-18A6FC2884A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73355A03-36DD-40DF-8D79-18A6FC2884A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73355A03-36DD-40DF-8D79-18A6FC2884A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73355A03-36DD-40DF-8D79-18A6FC2884A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C11475A-78C2-4206-9330-883A336AB155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C11475A-78C2-4206-9330-883A336AB155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C11475A-78C2-4206-9330-883A336AB155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C11475A-78C2-4206-9330-883A336AB155}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0446CC11-0EF3-4E5B-85DC-C2C71A80A125}
+	EndGlobalSection
+EndGlobal

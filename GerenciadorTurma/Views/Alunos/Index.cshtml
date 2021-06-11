@@ -1,0 +1,36 @@
+﻿@model AlunosModel
+
+<a href="/alunos/cadastro" class="btn btn-success" role="button" aria-pressed="true">Cadastrar</a>
+<hr />
+<form action="/alunos" method="get">
+    <div class="form-group">
+        <label>Nome</label>
+        <input type="text" class="form-control" placeholder="Nome do aluno" value="@Model.Filtro" name="nome">
+    </div>
+    <button type="submit" class="btn btn-primary">Filtrar</button>
+</form>
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aluno in Model.Alunos)
+        {
+            <tr>
+                <th scope="row">@aluno.Id</th>
+                <td>@aluno.Nome</td>
+                <td>@aluno.Email</td>
+                <td>
+                    <a href="/alunos/editar?id=@aluno.Id" class="btn btn-info" role="button" aria-pressed="true">Editar</a>
+                    <a href="/alunos/excluir?id=@aluno.Id" class="btn btn-danger" role="button" aria-pressed="true">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

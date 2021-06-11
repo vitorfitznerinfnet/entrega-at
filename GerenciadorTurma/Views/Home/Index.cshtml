@@ -1,0 +1,16 @@
+﻿@model GerenciadorTurma.Models.Home.IndexModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem vindo ao gerenciador de turmas</h1>
+    <h4>Quantidade de alunos no sistema: @Model.QuantidadeDeAlunos</h4>
+
+    @foreach (var aluno in Model.Alunos)
+    {
+        <p>@aluno.Nome</p>
+    }
+
+</div>
