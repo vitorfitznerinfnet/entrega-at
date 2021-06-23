@@ -3,11 +3,11 @@
 <form action="/alunos/cadastro" method="post">
     <div class="form-group">
         <label>Nome</label>
-        <input type="text" class="form-control" placeholder="Nome do aluno" name="nome">
+        <input type="text" class="form-control" placeholder="Nome do aluno" name="nome" id="nome">
     </div>
     <div class="form-group">
         <label>E-mail</label>
-        <input type="email" class="form-control" placeholder="E-mail do aluno" name="email">
+        <input type="email" class="form-control" placeholder="E-mail do aluno" name="email" id="email">
     </div>
 
     @if (Model.Errors.Count > 0)
@@ -20,5 +20,5 @@
         </ul>
     }
 
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-primary" id="cadastrar">Enviar</button>
 </form>

@@ -114,6 +114,9 @@ namespace GerenciadorTurma.Controllers
         {
             var aluno = BancoDeDados.Alunos.Find(id);
 
+            if (aluno == null)
+                return Redirect("/alunos");
+
             BancoDeDados.Alunos.Remove(aluno);
             BancoDeDados.SaveChanges();
 
